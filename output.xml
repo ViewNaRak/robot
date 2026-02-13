@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.0 on win32)" generated="2026-02-13T14:00:31.152965" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Qr" source="D:\learn\GitHub\robot\login_qr.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2026-02-13T14:00:31.335075" level="INFO">Opening browser 'chrome' to base url 'https://chiangmuan.igovapp.com/'.</msg>
+<arg>https://chiangmuan.igovapp.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-13T14:00:31.334897" elapsed="2.869950"/>
+</kw>
+<test id="s1-t1" name="loginQRCORD" line="22">
+<kw name="Login">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>ระบบบริการประชาชน</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-02-13T14:00:34.205912" elapsed="0.009616"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-13T14:00:34.216004" level="INFO">Clicking element '//*[@id="root"]/div/nav/header/div/a[1]'.</msg>
+<arg>locator=//*[@id="root"]/div/nav/header/div/a[1]</arg>
+<arg>modifier=False</arg>
+<arg>action_chain=False</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-13T14:00:34.215698" elapsed="1.152787"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=//*[@id="app"]/div/div/div/div[2]/div/div[2]/a</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-13T14:00:35.368701" elapsed="0.431103"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-13T14:00:35.800169" level="INFO">Clicking element '//*[@id="app"]/div/div/div/div[2]/div/div[2]/a'.</msg>
+<arg>locator=//*[@id="app"]/div/div/div/div[2]/div/div[2]/a</arg>
+<arg>modifier=False</arg>
+<arg>action_chain=False</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-13T14:00:35.799967" elapsed="0.046177"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<msg time="2026-02-13T14:01:05.961041" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-13T14:01:05.961203" level="FAIL">None</msg>
+<arg>เข้าสู่ระบบด้วยคิวอาร์โค้ด</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="FAIL" start="2026-02-13T14:00:35.846298" elapsed="30.116172">None</status>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>ประวัติการตรวจสุขภาพ</arg>
+<arg>timeout=60</arg>
+<arg>error=None</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-13T14:01:05.962617" elapsed="0.000026"/>
+</kw>
+<status status="FAIL" start="2026-02-13T14:00:34.205609" elapsed="31.757117">None</status>
+</kw>
+<status status="FAIL" start="2026-02-13T14:00:34.205025" elapsed="31.758068">None</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-13T14:01:05.963697" elapsed="2.135172"/>
+</kw>
+<status status="FAIL" start="2026-02-13T14:00:31.154130" elapsed="36.945005"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login Qr" id="s1" pass="0" fail="1" skip="0">Login Qr</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
